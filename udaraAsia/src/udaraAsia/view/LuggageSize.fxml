@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane alignment="CENTER" animated="false" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="UDARA ASIA" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="udaraAsia.view.LuggageSizeControl">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="227.0" layoutY="83.0" mnemonicParsing="false" onAction="#handleBtn20" prefHeight="60.0" prefWidth="147.0" text="20KG (+RM50)" />
+            <Button layoutX="230.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleBtn40" prefHeight="59.0" prefWidth="147.0" text="40KG (+RM100)" />
+            <Button layoutX="230.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleBtn60" prefHeight="60.0" prefWidth="148.0" text="60KG (+RM150)" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="229.0" layoutY="14.0" prefHeight="53.0" prefWidth="144.0" text="LUGGAGE SIZE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </content>
+   <graphic>
+      <Button mnemonicParsing="false" onAction="#handleBackToHome" onMouseClicked="#handleBackToHome" prefHeight="29.0" prefWidth="66.0" text="Back" translateX="-230.0" />
+   </graphic>
+   <font>
+      <Font size="18.0" />
+   </font>
+</TitledPane>

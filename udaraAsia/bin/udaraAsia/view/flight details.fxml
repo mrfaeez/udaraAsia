@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="udaraAsia.view.FlightDestinationDateClassController">
+   <children>
+      <SplitPane dividerPositions="0.40703517587939697" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <GridPane prefHeight="118.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label lineSpacing="10.0" prefHeight="27.0" prefWidth="62.0" text="From :" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="from" onAction="#initialize" onMouseClicked="#initialize" prefHeight="26.0" prefWidth="190.0" promptText="Select an option" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="40.0" />
+                           </GridPane.margin>
+                        </ComboBox>
+                        <Label layoutX="136.0" layoutY="16.0" lineSpacing="10.0" prefHeight="27.0" prefWidth="40.0" text="To : " textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="to" layoutX="64.0" layoutY="96.0" onAction="#initialize" onMouseClicked="#initialize" prefHeight="26.0" prefWidth="190.0" promptText="Select an option" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="40.0" />
+                           </GridPane.margin>
+                        </ComboBox>
+                     </children>
+                  </GridPane>
+                  <TitledPane alignment="CENTER" animated="false" prefHeight="45.0" prefWidth="600.0" text="UDARA ASIA">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Downloads/plane-icon-5.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TitledPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="598.0">
+               <children>
+                  <SplitPane dividerPositions="0.4996646545942321" layoutX="199.0" layoutY="86.0" prefHeight="274.4" prefWidth="598.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <GridPane prefHeight="232.0" prefWidth="295.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="296.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.20001220703125" minWidth="0.0" prefWidth="0.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="93.4000114440918" minHeight="10.0" prefHeight="71.19998168945312" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="101.4" minHeight="10.0" prefHeight="72.59997558593749" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="94.5999755859375" minHeight="10.0" prefHeight="88.60002441406249" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="27.0" prefWidth="297.0" text="Choose your date:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets top="30.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <DatePicker fx:id="dateOfDeparture" prefHeight="26.0" prefWidth="193.0" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </DatePicker>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Pane layoutX="58.0" layoutY="16.0" prefHeight="232.0" prefWidth="296.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="1.0" layoutY="36.0" prefHeight="27.0" prefWidth="295.0" text="Choose your class:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <RadioButton fx:id="economy" layoutX="74.0" layoutY="78.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="157.0" selected="true" text="Economy Class">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="kelas" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="business" disable="true" layoutX="76.0" layoutY="116.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="157.0" text="Business Class" toggleGroup="$kelas">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <Button layoutX="199.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleCancelBtn" text="Cancel" />
+                                    <Button layoutX="120.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleOkBtn" prefHeight="25.0" prefWidth="54.0" text="OK" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
